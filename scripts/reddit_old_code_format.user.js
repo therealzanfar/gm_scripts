@@ -1,13 +1,20 @@
 // ==UserScript==
 // @name     		Old Reddit Code Formatting
-// @version  		0.1.0
+// @version  		0.1.1
 // @grant    		none
 // @namespace		https://raw.githubusercontent.com/therealzanfar/iptool/main/
-// @description	Enable tripple-backtick formatting in Old Reddit
+// @description	Enable triple-backtick formatting in Old Reddit
 // @match				http://old.reddit.com/*
 // @match				https://old.reddit.com/*
 // @require     https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js
 // ==/UserScript==
+
+/*
+Known Issues / TODO:
+
+* Deal with open-ended or aborted code blocks
+* Work with RES Never-Ending Reddit
+*/
 
 function highlight(e, color) {
 	e.css({
